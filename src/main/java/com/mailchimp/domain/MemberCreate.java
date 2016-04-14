@@ -14,4 +14,28 @@ public class MemberCreate
 
     @JsonProperty(value = JsonConstants.STATUS)
     protected SubscribeStatus subscribeStatus;
+
+    public MemberMergeFields getMemberMergeFields() {
+        return memberMergeFields;
+    }
+
+    public void setMemberMergeFields(MemberMergeFields memberMergeFields) {
+        this.memberMergeFields = memberMergeFields;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public SubscribeStatus getSubscribeStatus() {
+        return subscribeStatus;
+    }
+
+    public void setSubscribeStatus(SubscribeStatus subscribeStatus) {
+        this.subscribeStatus = subscribeStatus;
+    }
 }
